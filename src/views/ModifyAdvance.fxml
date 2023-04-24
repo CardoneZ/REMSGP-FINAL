@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="controller.ModifyAdvanceController">
+   <children>
+      <Label layoutX="226.0" layoutY="36.0" text="Modificar Avance" textFill="#0044ff">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="38.0" layoutY="334.0" mnemonicParsing="false" style="-fx-background-color: green;" text="Cancelar" textFill="WHITE" />
+      <Button layoutX="463.0" layoutY="334.0" mnemonicParsing="false" style="-fx-background-color: green;" text="Guardar cambios" textFill="WHITE" />
+      <DatePicker layoutX="184.0" layoutY="127.0" />
+      <Label layoutX="76.0" layoutY="92.0" text="Titulo:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField layoutX="137.0" layoutY="93.0" />
+      <Label layoutX="76.0" layoutY="126.0" text="Fecha Inicio:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="76.0" layoutY="153.0" text="Fecha Inicio:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <DatePicker layoutX="184.0" layoutY="155.0" />
+      <Label layoutX="76.0" layoutY="187.0" text="Descripcion:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField layoutX="184.0" layoutY="188.0" prefHeight="143.0" prefWidth="261.0" />
+      <ImageView fitHeight="68.0" fitWidth="62.0" layoutX="14.0" layoutY="16.0">
+         <image>
+            <Image url="@../../../../../../Downloads/uvlogo.png" />
+         </image>
+      </ImageView>
+      <Text fill="#0d00ff" layoutX="460.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="REMSGP">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Text>
+      <Spinner layoutX="368.0" layoutY="154.0" prefHeight="25.0" prefWidth="49.0" />
+      <Spinner layoutX="427.0" layoutY="154.0" prefHeight="25.0" prefWidth="49.0" />
+      <Spinner layoutX="427.0" layoutY="127.0" prefHeight="25.0" prefWidth="49.0" />
+      <Spinner layoutX="368.0" layoutY="127.0" prefHeight="25.0" prefWidth="49.0" />
+   </children>
+</AnchorPane>
