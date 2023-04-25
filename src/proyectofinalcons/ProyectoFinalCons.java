@@ -23,7 +23,7 @@ public class ProyectoFinalCons extends Application{
     }
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("../views/Details.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("../views/Login.fxml"));
         
         Scene scene = new Scene(root);
         stage.setScene(scene);

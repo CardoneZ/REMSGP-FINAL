@@ -6,8 +6,35 @@ package logic;
 
 /**
  *
- * @author hp
+ * @author samuel 
  */
-public class Student {
+public class Student extends User{
+
+    public int getUserId() {
+        return userId;
+    }
+
+    public void setUserId(int userId) {
+        this.userId = userId;
+    }
+
+    public int getStaffNumber() {
+        return staffNumber;
+    }
+
+    public void setStaffNumber(int staffNumber) {
+        this.staffNumber = staffNumber;
+    }
+
+    public int getIdStudent() {
+        return idStudent;
+    }
+
+    public void setIdStudent(int idStudent) {
+        this.idStudent = idStudent;
+    }
+    private int userId;
+    private int staffNumber;
+    private int idStudent;
     
 }

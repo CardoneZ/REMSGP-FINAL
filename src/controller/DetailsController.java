@@ -22,12 +22,12 @@ import logic.Advance;
 import logic.Advance;
 import DAO.AdvanceDAO;
 import DAO.AdvanceDAO;
-import logic.App;
+
 import javafx.stage.Stage;
 /**
  * FXML Controller class
  *
- * @author hp
+ * @author samuel
  */
 public class DetailsController implements Initializable {
 
@@ -40,11 +40,6 @@ public class DetailsController implements Initializable {
     @FXML
     private void handleButtonAction(ActionEvent event) throws IOException{
         
-       /*Stage stage = new Stage();
-        Parent root = FXMLLoader.load(getClass().getResource("../views/ModifyAdvance.fxml"));
-        Scene scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();*/
     }
     
     @FXML

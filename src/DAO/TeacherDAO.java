@@ -10,6 +10,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import logic.ITeacherDAO;
 import logic.Teacher;
 
@@ -32,11 +34,11 @@ public class TeacherDAO implements ITeacherDAO {
     }
 
     @Override
-   public ArrayList<Teacher> consultTeacher() throws SQLException{
+   public ObservableList<Teacher> consultTeacher() throws SQLException{
     String sql = "SELECT Profesor.NumeroDePersonal, Usuario.Nombre, Usuario.ApellidoPaterno, Usuario.ApellidoMaterno, Usuario.CorreoInstitucional "
             + "FROM Profesor"
             + "INNER JOIN Usuario ON Profesor.IdUsuario = Usuario.IdUsuario";
-    ArrayList<Teacher> list = new ArrayList<>();
+    ObservableList<Teacher> list = FXCollections.observableArrayList();
     DataBaseManager dataBaseManager = new DataBaseManager();
     Connection connection = dataBaseManager.getConnection();
     PreparedStatement statement = connection.prepareStatement(sql);
@@ -54,7 +56,7 @@ public class TeacherDAO implements ITeacherDAO {
 
     connection.close();
 
-    return (ArrayList<Teacher>) list;
+    return (ObservableList<Teacher>) list;
   }
 
     @Override
